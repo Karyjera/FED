@@ -40,7 +40,7 @@ https://backtoblackcoffee.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina
-  <img src="readme-images/homepagina.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/homepagina.pdf" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Product detailpagina
