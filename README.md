@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Amaro Lichtveld 
 
   #### Je startniveau:
-  Ik neem de rode piste, omdat ik websites makes leuk vind en mijn motivatie ook hoger ligt waardoor ik een stuk sneller leer.
+  Ik neem de blauwe piste, omdat ik websites makes leuk vind maar loop vaak nog etegen code aan. Wel is mijn motivatie ook hoog waardoor ik een stuk sneller leer.
 
   #### Je focus:
   Ik neem de focus op responsive in het eerste geval. Ik wil eigenlijk ook wel een deel focussen op surface laag want micro intercaties vind ik persoonlijk leuk om mee aan de slag te gaan.
@@ -58,6 +58,16 @@ https://backtoblackcoffee.nl/
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+Geen skip-link naar de hoofdinhoud → veel tabben voor keyboard/screenreader-gebruikers.
+
+Niet-logische headingstructuur (H1 “Shop”, daarna soms H5) → onduidelijk documentoverzicht.
+
+Icon-knoppen zonder duidelijke tekst of aria-label (hamburger, cart, social icons).
+
+Autoplay-video zonder duidelijke mogelijkheid om de beweging te stoppen.
+
+Navigatie veel via iconen/slide-menu → mogelijk lastiger voor toetsenbordgebruikers.
+
 </details>
 
 
@@ -88,8 +98,15 @@ https://backtoblackcoffee.nl/
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De echte site heeft geen “skip to content” link waardoor je als gebruiker eerst door alle navigatie heen moet tabben. Ik heb een skip-link toegevoegd die meteen naar de main content springt. Dit is een kleine verbetering die veel scheelt voor screenreaders en toetsenbordgebruikers. Ook in het origineel zijn veel knoppen alleen iconen en zonder aria-label weet een screenreader niet wat die knop doet.
+In mijn versie heb ik alle iconknoppen aria-labels gegeven zoals “Open menu” of “Naar winkelwagen”.
+Alle afbeeldingen die informatie geven (producten, locaties, blogfoto) hebben bij mij een alt-tekst gekregen. Decoratieve dingen zouden alt="" krijgen. Dot heb ik gedaan want is beter voor screenreaders.
 
+De originele site begint met H1 “Shop” maar heeft daarna ineens H5-koppen voor andere onderdelen. 
+Ik heb één duidelijke H1 voor de pagina en daarna H2’s voor onderdelen zoals Shop, Locatie, Blog, etc. En ook heb ik bewust gewerkt met header, main, section, article en footer. Niet te veel onnodige divs. Zo blijft de site overzichtelijk.
+
+Ik wilde twee producten naast elkaar zetten op mobiel formaat. Eerst dacht ik aan flexbox, maar dat zorgde ervoor dat de elementen niet mooi naast elkaar gingen zitten en niet goed schaalden.
+Met hulp ben ik overgestapt op CSS Grid. Dat werkt veel netter voor mijn gevoel als je op mobiel 2 kolommen wilt en later op laptop automatisch 4 of 6 kolommen. Het geeft meer controle.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
