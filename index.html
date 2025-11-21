@@ -3,18 +3,166 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Amaro Lichtveld">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Howdy FED2526</title>
+	<meta name="description" content="Homepagina van Back to Black Coffee – verse koffiebonen uit onze eigen koffiebranderij in Amsterdam.">
+
+	<title>Home – Back to Black Coffee</title>
 
 	<link href="styles/style.css" rel="stylesheet">
 
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
-	<h1>Howdy FED2526</h1>
+	<a class="skip-link" href="#main">Ga naar hoofdinhoud</a>
+
+	<header>
+		<nav aria-label="Hoofd navigatie">
+		  <button aria-label="Open menu">
+			<img src="images/icon-menu.svg" alt=""> <!-- Hamburger icon afkomstig van https://heroicons.com/ -->
+		  </button>
+	  
+		  <a href="index.html">
+			<img src="images/headerlogo2.png" alt="Back to Black Coffee"> 
+		  </a>
+	  
+		  <button aria-label="Winkelwagen">
+			<img src="images/icon-cart.svg" alt=""> <!-- Shoppingcart icon afkomstig van https://heroicons.com/ -->
+		  </button>
+		</nav>
+	  </header>
+	  
+	  <main id="main">
+		<section class="intro">
+		  <h1 class="visually-hidden">Back to Black Coffee</h1>
+	  
+		  <video
+			class="intro-video"
+			autoplay
+			muted
+			loop
+			playsinline
+			aria-label="Barista die koffie inschenkt bij Back to Black Coffee"
+			>
+
+			<source src="videos/intro-video.mp4" type="video/mp4">
+			Je browser kan deze video niet afspelen.
+		  </video>
+		</section>
+
+		<section class="shop">
+			<h2>Shop</h2>
+			<p class="shop-intro">
+			  Verse koffiebonen uit onze eigen koffie branderij in Amsterdam
+			</p>
+		  
+			<div class="product-grid">
+		  
+			  <article class="product">
+				<img src="images/koffieabonnement.jpg" alt="Koffie-abonnement pakket">
+				<h3>Koffie-abonnement</h3>
+				<p class="product-price">Vanaf: € 8,75 / maand</p>
+			  </article>
+		  
+			  <article class="product">
+				<img src="images/Product-colombia.jpg" alt="Colombia Excelso EP Washed zak koffiebonen">
+				<h3>Colombia – Excelso EP – Washed</h3>
+				<p class="product-price">€ 9,90 – € 37,15</p>
+			  </article>
+		  
+			</div>
+		  </section>
+
+		  <section class="locatie">
+			<img src="images/koffiebranderij.jpg" alt="Koffiebar Back to Black aan de Nieuw-Zeelandweg">
+		  
+			<div class="locatie-content">
+				<h2>Koffiebranderij & bakkerij</h2>
+			  <p>Nieuw-Zeelandweg 15D
+				1045 AL Amsterdam</p>
+		  
+			  <a class="locatie-btn" href="#">Zakelijk</a>
+			</div>
+		  </section>
+
+		  <section class="partners">
+			<h2 class="visually-hidden">Zakelijke klanten</h2>
+		  
+			<ul class="partnerlijst">
+			  <li>
+				<img src="images/Daily-Paper.png" alt="Daily Paper">
+			  </li>
+			  <li>
+				<img src="images/nassau.png" alt="Nassau">
+			  </li>
+			  <!-- later kun je hier meer <li> toevoegen -->
+			</ul>
+		  </section>
+		  
+		  <section class="blog">
+			<h2>Blog</h2>
+		  
+			<article>
+			  <img 
+				src="images/blog1.png" 
+				alt="Verse koffie gezet met een Chemex"
+			  >
+		  
+			  <h3>Water is King!</h3>
+		  
+			  <p>
+				Many of us have encountered both sides of the water spectrum at some.…
+			  </p>
+		  
+			  <a href="#" class="blog-button">Continue Reading</a>
+			</article>
+		  </section>
+		  
+		  <div class="blog-more">
+			<a href="#" class="more-button">Meer</a>
+		  </div>
+		  
+	  <footer class="footer">
+
+  <!-- Bovenste zwarte blok -->
+  <div class="footer-top">
+
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">
+        <img src="icons/instagram.svg" alt="" />
+      </a>
+      <a href="#" aria-label="Facebook">
+        <img src="icons/facebook.svg" alt="" />
+      </a>
+    </div>
+
+    <nav class="footer-links">
+      <a href="#">Imprint</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Algemene voorwaarden</a>
+    </nav>
+
+    <div class="footer-language">
+      <span>Language</span>
+      <button>
+        Nederlands ▾
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Witte rand onderaan -->
+  <div class="footer-bottom">
+    <p>© 2023 Back to Black. All rights reserved<br>(build by Earlie)</p>
+  </div>
+
+</footer>
+
+	  </main>
+	  
+	
 
 	<script defer src="scripts/script.js"></script>
 </body>
