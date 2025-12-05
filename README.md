@@ -185,8 +185,15 @@ Met hulp ben ik overgestapt op CSS Grid. Dat werkt veel netter voor mijn gevoel 
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Wat goed ging;
+De basisstructuur van de HTML opzetten met sections en articles waardoor de pagina overzichtelijk bleef.
+Het toepassen van flexbox en grid ging steeds makkelijker vooral bij de productkaarten en lay-out van de homepage. Ook de elementen zoals de skip-link, visually-hidden headings en custom fonts ging zonder problemen.
 
+Wat minder goed ging:
+Ik had moeite met fieldset en legend, omdat ik eerst niet wist waarvoor ze precies bedoeld waren. Ook het
+maken van de layout responsief met media queries was lastig want de elementen schoven soms verkeerd of stonden niet meer goed uitgelijnd.
+
+De tab-functionaliteit (Beschrijving / Beoordelingen) voor mijn productpage was verwarrend in het begin  want ik wist niet of dit echte buttons moesten zijn of speciale elementen.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
